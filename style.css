@@ -22,8 +22,9 @@ body {
   color: #ee5253;
   overflow: hidden;
   /* #ffebcc */
-  background: #eef9fd;
-  background-image: url(img/vecteezy_watercolor-texture-background_.jpg);
+  /* background: #eef9fd; */
+  background-image: url('img/vecteezy_abstract-pink-watercolor-background_.jpg');
+
   height: 700px;
   background-size: cover;
 }
@@ -32,24 +33,32 @@ body {
   position: fixed;
   right: 0;
  margin-right: 10px;
- border-radius: 5px;
- letter-spacing: 1px;
- border:2px solid #2b2e4a;
-
-    padding: 9px 16px;
-    font-size: 13px;
+opacity: 1;
     font-family: "Fjalla One", sans-serif;
-   margin-top: 2px;
+    margin-top: 4px;
    transition: all 0.2s ease-in-out;
 }
 
-.resume a{
+.resume div a{
   color: #2b2e4a;
+opacity: 0;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  padding: 9px 16px;
+  font-size: 13px;
+  
+  border:2px solid #2b2e4a;
 }
 
-.resume:hover{
-  border:2px solid white;
+.resume div a{
+  animation: slow 0.55s ease-in-out forwards;
+  animation-delay: 2100ms;
+ 
+}
 
+.resume div a:hover{
+  border:2px solid #5243ff;
+  color:#5243ff;
 }
 
 /* ................ SELECTION COLOR ................... */
@@ -114,6 +123,7 @@ body {
   transform: rotate(-70deg);
   transition: all 0.3s ease-in;
 }
+
 
 
 
@@ -896,7 +906,7 @@ font-family: 'Fjalla One', sans-serif;
 .content3 div{
   padding: 16px 0px;
   margin-top: 40px;
-
+  border: none;
 }
 
 .content3 div a{
@@ -904,15 +914,15 @@ font-family: 'Fjalla One', sans-serif;
   font-family: 'Fjalla One', sans-serif;
   padding: 12px;
   color: #2b2e4a;
-  border: none;
-  background: none;
+
   border:1px solid #2b2e4a;
   transition: all 0.12s ease-in-out;
 
 }
 
-.content3 div  :hover{
+.content3 div a:hover{
  
   color:#f24139;
+  border:1px solid #f24139;
   transition: all 0.12s ease-in-out;
 }
