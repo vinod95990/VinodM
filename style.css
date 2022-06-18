@@ -727,31 +727,23 @@ font-family: 'Fjalla One', sans-serif;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  height: 10%;
-  background: white;
-}
+    height: 2%;
+    /* background: rgba(17,19,23,255); */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #645c5c;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #d4d4d8;
+    transition: background-color 0.3s;
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(255, 89, 0);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 89, 0, 1) 28%,
-    rgba(156, 74, 255, 1) 100%,
-    rgba(255, 0, 0, 1) 100%
-  );
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 89, 0);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 89, 0, 1) 12%,
-    rgba(68, 65, 255, 1) 100%,
-    rgba(255, 0, 0, 1) 100%
-  );
-}
+  }
 
 .nav-abouts {
   opacity: 0;
